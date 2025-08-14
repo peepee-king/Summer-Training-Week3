@@ -68,4 +68,8 @@ pip install pillow==9.0.1
 ```
 3. 下載detectron2套件前同樣需要先準備好環境(gcc)，否則無法順利安裝在環境上，詳細說明可以[detectron2安裝說明](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md)查看
 4. 資料集可以從NAS上的VIS_Lab/VIS_Lab共用(ALL) /99_Others/dataset/MSDAOD_dataset中找到，另外註冊資料集時也請確保路徑是正確的
-5. 使用TWCC時可參考的[映象檔資訊](https://man.twcc.ai/@twccdocs/ccs-concept-image-main-zh/%2F%40twccdocs%2Fccs-concept-image-pytorch-zh)
+
+## 參考連結
+
+1. Detectron2官方教程：[Detectron2 入門](https://detectron2.readthedocs.io/en/latest/)
+2. 使用TWCC時可參考的[映象檔資訊](https://man.twcc.ai/@twccdocs/ccs-concept-image-main-zh/%2F%40twccdocs%2Fccs-concept-image-pytorch-zh)
