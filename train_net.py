@@ -96,7 +96,7 @@ def load_voc_instances(dirname: str, split: str, class_names: Union[List[str], T
 def register_pascal_voc(name, dirname, split, year, class_names):
     DatasetCatalog.register(name, lambda: load_voc_instances(dirname, split, class_names))
     MetadataCatalog.get(name).set(
-        thing_classes=list(class_names), dirname=dirname, year=year, split=split, evaluator_type="coco"
+        thing_classes=list(class_names), dirname=dirname, year=year, split=split, evaluator_type="coco"#"pascal_voc"
     )
 
 
@@ -261,11 +261,17 @@ def invoke_main() -> None:
 
 
 # +
-dataset_path = 'C:/Users/user/Probabilistic Teacher/ProbabilisticTeacher/data/VOC2007_citytrain' # 這是你的資料集路徑
+# dataset_path = '/home/juejue34589/Summer-Training-Week3/dataset/Cityscapes_dataset/VOC2007' # 這是你的資料集路徑
+dataset_path="/home/juejue34589/Summer-Training-Week3/dataset/foggy_cityscape/VOC2007"
 class_names = ('truck','car','rider','person','train','motorcycle','bicycle','bus')
+
+# wandb.init(project="summer-hw3", name=f"foggy_resnet50{datetime.datetime.now().strftime('%Y-%m-%d_%H%M%S')}",dir="week3_wandb")
 
 
 if __name__ == "__main__":
-    register_pascal_voc("cityscapes_train",dataset_path,"trainval","2007",class_names)
-    register_pascal_voc("cityscapes_val",dataset_path,"test","2007",class_names)
+
+    # register_pascal_voc("cityscapes_train",dataset_path,"trainval","2007",class_names)
+    # register_pascal_voc("cityscapes_val",dataset_path,"test","2007",class_names)
+    register_pascal_voc("foggy_train",dataset_path,"train","2007",class_names)
+    register_pascal_voc("foggy_val",dataset_path,"test","2007",class_names)
     invoke_main()  # pragma: no cover
