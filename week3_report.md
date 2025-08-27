@@ -50,7 +50,7 @@ pip install git+https://github.com/facebookresearch/detectron2.git@v0.5
 模型使用Coco format evaluator去評估模型效能，AP數值越高代表偵測結果越精準，AP50則是預測框和gt有一半重疊即算正確，而APs、APm、APl則代表模型對於小、中、大物體的預測平均精確度。
 ## 1.Cityscapes dataset
 使用原始給定的參數，iteration為24000，並在每訓練8000 iteration後進行驗證集測試。
-![image](https://hackmd.io/_uploads/S1-BnS3Yxe.png)
+![image](https://hackmd.io/_uploads/S1-BnS3Yxe.png?raw=True)
 訓練時的total_loss:
 ![image](https://hackmd.io/_uploads/SJcZO8hYel.png)
 ![image](https://hackmd.io/_uploads/H1Pa7HnKxe.png)
