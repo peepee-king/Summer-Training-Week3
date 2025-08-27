@@ -89,4 +89,4 @@ Config檔中的參數，考量到iter:24000的訓練時長過長(大約5小時)�
 這次的環境部屬反而更依賴CSDN上的討論與經驗帖，使用AI進行輔助反而一直受限於官方文件推薦的版本搭配，導致遇到了AI推薦將Nvidia驅動刪除並重裝，最後出現驅動和底層驅動版本衝突的荒謬故事。並意外發現較高版本的cuda、pytorch對於安裝上的影響並沒想像中的高，最多會遇到相關套件版本太高導致某些方法被官方棄用而出現的報錯。
 # 其他參考資料
 https://blog.csdn.net/stevenZXZ/article/details/133864392
-github.com/facebookresearch/detectron2
+github.com/facebookresearch/detectron2 
